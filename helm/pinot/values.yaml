@@ -34,11 +34,11 @@ image:
   #   - MS OpenJDK 11, e.g. `latest-11-ms-openjdk`, `1.0.0-11-ms-openjdk`
   #   - MS OpenJDK 17, e.g. `latest-17-ms-openjdk`, `1.0.0-17-ms-openjdk`
   #   - OpenJDK 21, e.g. `latest-21-openjdk`, `1.0.0-21-openjdk`
-  tag: latest # 1.0.0, 0.12.1, latest
+  tag: 1.2.0 # 1.0.0, 0.12.1, latest
   pullPolicy: Always # Use IfNotPresent when you pinged a version of image tag
 
 cluster:
-  name: pinot-quickstart
+  name: pinot-population-health
 
 imagePullSecrets: []
 
@@ -126,7 +126,7 @@ controller:
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
-    size: 1G
+    size: 10G
     mountPath: /var/pinot/controller/data
     storageClass: ""
     extraVolumes: []
@@ -180,12 +180,19 @@ controller:
       path: /
       hosts: [ ]
     v1:
-      enabled: false
-      ingressClassName: ""
-      annotations: {}
+      enabled: true
+      ingressClassName: "alb"
+      annotations:
+        alb.ingress.kubernetes.io/scheme: "internal"
+        # alb.ingress.kubernetes.io/subnets: "subnet-0e864d83c4608daae,subnet-04ec32d21c44eec48,subnet-0e32e141ab2461ae1" #PROD
+        alb.ingress.kubernetes.io/subnets: "subnet-0ce91469e1c92c8fe,subnet-0cac670aabd3cd85c,subnet-01f1394b04c80fce2" #DEV
+        alb.ingress.kubernetes.io/target-type: "ip"
       tls: []
       path: /
-      hosts: []
+      hosts: [
+        # controller.lscsis-pinot.com #PROD
+        dev.controller.lscsis-pinot.com #DEV
+      ]
 
   resources:
     requests:
@@ -234,7 +241,7 @@ controller:
 # ------------------------------------------------------------------------------
 broker:
   name: broker
-  replicaCount: 1
+  replicaCount: 3
   podManagementPolicy: Parallel
   podSecurityContext: {}
     # fsGroup: 2000
@@ -315,13 +322,20 @@ broker:
       path: /
       hosts: []
     v1:
-      enabled: false
-      ingressClassName: ""
-      annotations: {}
+      enabled: true
+      ingressClassName: "alb"
+      annotations:
+        alb.ingress.kubernetes.io/scheme: "internal"
+        # alb.ingress.kubernetes.io/subnets: "subnet-0e864d83c4608daae,subnet-04ec32d21c44eec48,subnet-0e32e141ab2461ae1" #PROD
+        alb.ingress.kubernetes.io/subnets: "subnet-0ce91469e1c92c8fe,subnet-0cac670aabd3cd85c,subnet-01f1394b04c80fce2" #DEV
+        alb.ingress.kubernetes.io/success-codes: "200,404"
+        alb.ingress.kubernetes.io/target-type: "ip"
       tls: []
       path: /
-      hosts: []
-
+      hosts: [
+        # "broker.lscsis-pinot.com" #PROD
+        "dev.broker.lscsis-pinot.com" #DEV
+      ]
   resources:
     requests:
       memory: "1.25Gi"
@@ -370,7 +384,7 @@ broker:
 # ------------------------------------------------------------------------------
 server:
   name: server
-  replicaCount: 1
+  replicaCount: 3
   podManagementPolicy: Parallel
   podSecurityContext: {}
     # fsGroup: 2000
@@ -412,7 +426,7 @@ server:
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
-    size: 4G
+    size: 30G
     mountPath: /var/pinot/server/data
     storageClass: ""
     #storageClass: "ssd"

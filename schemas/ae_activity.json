@@ -1,0 +1,280 @@
+{
+  "schemaName": "ae_activity",
+  "dimensionFieldSpecs": [
+    {
+      "name": "type",
+      "dataType": "STRING"
+    },
+    {
+      "name": "nhs_number",
+      "dataType": "STRING"
+    },
+    {
+      "name": "event_date",
+      "dataType": "STRING"
+    },
+    {
+      "name": "admission_method",
+      "dataType": "STRING"
+    },
+    {
+      "name": "specialty",
+      "dataType": "STRING"
+    },
+    {
+      "name": "provider",
+      "dataType": "STRING"
+    },
+    {
+      "name": "provider_long",
+      "dataType": "STRING"
+    },
+    {
+      "name": "sitecode",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ccg_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "total_cost",
+      "dataType": "STRING"
+    },
+    {
+      "name": "primary_diagnosis",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ethnic_category_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "digest",
+      "dataType": "STRING"
+    },
+    {
+      "name": "diagnosis_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "diagnosis_group_1",
+      "dataType": "STRING"
+    },
+    {
+      "name": "diagnosis_group_2",
+      "dataType": "STRING"
+    },
+    {
+      "name": "diagnosis_group_3",
+      "dataType": "STRING"
+    },
+    {
+      "name": "week_commencing",
+      "dataType": "STRING"
+    },
+    {
+      "name": "month_start",
+      "dataType": "STRING"
+    },
+    {
+      "name": "du",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ccg_name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "local_authority",
+      "dataType": "STRING"
+    },
+    {
+      "name": "pcn",
+      "dataType": "STRING"
+    },
+    {
+      "name": "sex",
+      "dataType": "STRING"
+    },
+    {
+      "name": "covid_risk",
+      "dataType": "STRING"
+    },
+    {
+      "name": "covid_vuln",
+      "dataType": "STRING"
+    },
+    {
+      "name": "mosaic_label",
+      "dataType": "STRING"
+    },
+    {
+      "name": "mosaic_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "household_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "household_type",
+      "dataType": "STRING"
+    },
+    {
+      "name": "duration_minute_bands",
+      "dataType": "STRING"
+    },
+    {
+      "name": "gpp_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "wardcode",
+      "dataType": "STRING"
+    },
+    {
+      "name": "lsoa",
+      "dataType": "STRING"
+    },
+    {
+      "name": "frailty_text",
+      "dataType": "STRING"
+    },
+    {
+      "name": "deprivation_decile",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ethnicity_from_sus",
+      "dataType": "STRING"
+    },
+    {
+      "name": "acorn",
+      "dataType": "STRING"
+    },
+    {
+      "name": "asthma",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "copd",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "chd",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "heart_failure",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "hypertension",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "atrial_fibrillation",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "pad",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "cancer",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "depression",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "dementia",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "mental_health",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "learning_disabilities",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "diabetes",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "hypothyroid",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "ckd",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "epilepsy",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "osteoporosis",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "rheumatoid_arthritis",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "duration_minutes",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [
+    {
+      "name": "cost",
+      "dataType": "INT"
+    },
+    {
+      "name": "length_of_stay_metric",
+      "dataType": "INT"
+    },
+    {
+      "name": "age",
+      "dataType": "INT"
+    },
+    {
+      "name": "risk_score_int",
+      "dataType": "INT"
+    },
+    {
+      "name": "ltc_count",
+      "dataType": "INT"
+    },
+    {
+      "name": "duration_minutes_metric",
+      "dataType": "INT"
+    }
+  ],
+  "dateTimeFieldSpecs": [
+    {
+      "name": "event_date_long",
+      "dataType": "LONG",
+      "format": "EPOCH",
+      "granularity": "15:MINUTES"
+    },
+    {
+      "name": "week_commencing_long",
+      "dataType": "LONG",
+      "format": "EPOCH",
+      "granularity": "15:MINUTES"
+    },
+    {
+      "name": "month_start_long",
+      "dataType": "LONG",
+      "format": "EPOCH",
+      "granularity": "15:MINUTES"
+    }
+  ]
+}
+

@@ -1,0 +1,445 @@
+{
+  "schemaName": "population_master",
+  "dimensionFieldSpecs": [
+    {
+      "name": "gpp_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "gpp_name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "gpp_short_name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ccg_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ccg_name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "nhs_number",
+      "dataType": "STRING"
+    },
+    {
+      "name": "nhs_number_report",
+      "dataType": "STRING"
+    },
+    {
+      "name": "sex",
+      "dataType": "STRING"
+    },
+    {
+      "name": "risk_score_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "mosaic_label",
+      "dataType": "STRING"
+    },
+    {
+      "name": "housebound_text",
+      "dataType": "STRING"
+    },
+    {
+      "name": "winter_planning_text",
+      "dataType": "STRING"
+    },
+    {
+      "name": "palliative_care_text",
+      "dataType": "STRING"
+    },
+    {
+      "name": "age_band_narrow",
+      "dataType": "STRING"
+    },
+    {
+      "name": "age_band_broad",
+      "dataType": "STRING"
+    },
+    {
+      "name": "taxonomy",
+      "dataType": "STRING"
+    },
+    {
+      "name": "area",
+      "dataType": "STRING"
+    },
+    {
+      "name": "frailty_text",
+      "dataType": "STRING"
+    },
+    {
+      "name": "lsoa",
+      "dataType": "STRING"
+    },
+    {
+      "name": "msoa",
+      "dataType": "STRING"
+    },
+    {
+      "name": "household_category",
+      "dataType": "STRING"
+    },
+    {
+      "name": "household_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "household_type",
+      "dataType": "STRING"
+    },
+    {
+      "name": "household_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "wellbeing_acorn_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "wellbeing_acorn_type",
+      "dataType": "STRING"
+    },
+    {
+      "name": "wellbeing_acorn_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ethnicity_from_sus",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ethniccategory",
+      "dataType": "STRING"
+    },
+    {
+      "name": "nh_rch_resident",
+      "dataType": "STRING"
+    },
+    {
+      "name": "matron_status_flag",
+      "dataType": "STRING"
+    },
+    {
+      "name": "bloodpressurereadingtype",
+      "dataType": "STRING"
+    },
+    {
+      "name": "longcovid",
+      "dataType": "STRING"
+    },
+    {
+      "name": "digest",
+      "dataType": "STRING"
+    },
+    {
+      "name": "wardcode",
+      "dataType": "STRING"
+    },
+    {
+      "name": "wardname",
+      "dataType": "STRING"
+    },
+    {
+      "name": "local_authority",
+      "dataType": "STRING"
+    },
+    {
+      "name": "icb",
+      "dataType": "STRING"
+    },
+    {
+      "name": "du",
+      "dataType": "STRING"
+    },
+    {
+      "name": "housebound",
+      "dataType": "STRING"
+    },
+    {
+      "name": "palliative_care",
+      "dataType": "STRING"
+    },
+    {
+      "name": "electoral_ward_or_division",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ward_name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "age_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "age_category",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ccg",
+      "dataType": "STRING"
+    },
+    {
+      "name": "covid_risk",
+      "dataType": "STRING"
+    },
+    {
+      "name": "covid_vuln",
+      "dataType": "STRING"
+    },
+    {
+      "name": "acorn",
+      "dataType": "STRING"
+    },
+    {
+      "name": "pcn",
+      "dataType": "STRING"
+    },
+    {
+      "name": "gpp_id",
+      "dataType": "INT"
+    },
+    {
+      "name": "age",
+      "dataType": "INT"
+    },
+    {
+      "name": "risk_score_rank",
+      "dataType": "INT"
+    },
+    {
+      "name": "risk_score_trend",
+      "dataType": "INT"
+    },
+    {
+      "name": "risk_score_int",
+      "dataType": "INT"
+    },
+    {
+      "name": "risk_segment",
+      "dataType": "INT"
+    },
+    {
+      "name": "ip_admissions_in_last_12_months",
+      "dataType": "INT"
+    },
+    {
+      "name": "ip_elective_admissions_in_last_12_months",
+      "dataType": "INT"
+    },
+    {
+      "name": "op_appointments_in_last_12_months",
+      "dataType": "INT"
+    },
+    {
+      "name": "ae_attendances_in_last_12_months",
+      "dataType": "INT"
+    },
+    {
+      "name": "days_since_last_nel",
+      "dataType": "INT"
+    },
+    {
+      "name": "days_since_last_ae",
+      "dataType": "INT"
+    },
+    {
+      "name": "chronic_condition_count",
+      "dataType": "INT"
+    },
+    {
+      "name": "ltc_count",
+      "dataType": "INT"
+    },
+    {
+      "name": "deprivation_decile",
+      "dataType": "INT"
+    },
+    {
+      "name": "iscarer_flag",
+      "dataType": "INT"
+    },
+    {
+      "name": "hascarer_flag",
+      "dataType": "INT"
+    },
+    {
+      "name": "mh_physicalexaminationdone_flag",
+      "dataType": "INT"
+    },
+    {
+      "name": "covidvaccinationcount",
+      "dataType": "INT"
+    },
+    {
+      "name": "total_cost",
+      "dataType": "INT"
+    },
+    {
+      "name": "total_nel_cost",
+      "dataType": "INT"
+    },
+    {
+      "name": "asthma",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "chd",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "heart_failure",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "cancer",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "copd",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "depression",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "diabetes",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "hypertension",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "atrial_fibrillation",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "ckd",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "dementia",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "epilepsy",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "hypothyroid",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "mental_health",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "learning_disabilities",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "osteoporosis",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "pad",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "rheumatoid_arthritis",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "palliative_care_flag",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "stroke_tia",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "risk_of_nel_register",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "smoker",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "substance_misuse",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "psychotic_disorder_flag",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "cdiff_flag",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "oxygen_flag",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "top_2_percent_unplanned",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "gp_data_feed",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "fcvanguard",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "mh_inremission",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "ndh_reg",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "nhs_hc_eligible",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "nhs_hc_completed",
+      "dataType": "BOOLEAN"
+    }
+  ],
+  "metricFieldSpecs": [
+    {
+      "name": "nel_cost",
+      "dataType": "INT"
+    },
+    {
+      "name": "cost",
+      "dataType": "INT"
+    }
+  ],
+  "dateTimeFieldSpecs": [
+    {
+      "name": "execution_date",
+      "dataType": "STRING",
+      "format": "SIMPLE_DATE_FORMAT|yyyy-MM-dd",
+      "granularity": "1:DAYS"
+    },
+    {
+      "name": "cpm_date",
+      "dataType": "STRING",
+      "format": "SIMPLE_DATE_FORMAT|yyyy-MM-dd",
+      "granularity": "1:DAYS"
+    }
+  ]
+}
