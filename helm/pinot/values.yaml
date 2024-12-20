@@ -184,14 +184,14 @@ controller:
       ingressClassName: "alb"
       annotations:
         alb.ingress.kubernetes.io/scheme: "internal"
-        # alb.ingress.kubernetes.io/subnets: "subnet-0e864d83c4608daae,subnet-04ec32d21c44eec48,subnet-0e32e141ab2461ae1" #PROD
-        alb.ingress.kubernetes.io/subnets: "subnet-0ce91469e1c92c8fe,subnet-0cac670aabd3cd85c,subnet-01f1394b04c80fce2" #DEV
+        alb.ingress.kubernetes.io/subnets: "subnet-0e864d83c4608daae,subnet-04ec32d21c44eec48,subnet-0e32e141ab2461ae1" #PROD
+        # alb.ingress.kubernetes.io/subnets: "subnet-0ce91469e1c92c8fe,subnet-0cac670aabd3cd85c,subnet-01f1394b04c80fce2" #DEV
         alb.ingress.kubernetes.io/target-type: "ip"
       tls: []
       path: /
       hosts: [
-        # controller.lscsis-pinot.com #PROD
-        dev.controller.lscsis-pinot.com #DEV
+        controller.lscsis-pinot.com #PROD
+        # dev.controller.lscsis-pinot.com #DEV
       ]
 
   resources:
@@ -326,15 +326,15 @@ broker:
       ingressClassName: "alb"
       annotations:
         alb.ingress.kubernetes.io/scheme: "internal"
-        # alb.ingress.kubernetes.io/subnets: "subnet-0e864d83c4608daae,subnet-04ec32d21c44eec48,subnet-0e32e141ab2461ae1" #PROD
-        alb.ingress.kubernetes.io/subnets: "subnet-0ce91469e1c92c8fe,subnet-0cac670aabd3cd85c,subnet-01f1394b04c80fce2" #DEV
+        alb.ingress.kubernetes.io/subnets: "subnet-0e864d83c4608daae,subnet-04ec32d21c44eec48,subnet-0e32e141ab2461ae1" #PROD
+        # alb.ingress.kubernetes.io/subnets: "subnet-0ce91469e1c92c8fe,subnet-0cac670aabd3cd85c,subnet-01f1394b04c80fce2" #DEV
         alb.ingress.kubernetes.io/success-codes: "200,404"
         alb.ingress.kubernetes.io/target-type: "ip"
       tls: []
       path: /
       hosts: [
-        # "broker.lscsis-pinot.com" #PROD
-        "dev.broker.lscsis-pinot.com" #DEV
+        "broker.lscsis-pinot.com" #PROD
+        # "dev.broker.lscsis-pinot.com" #DEV
       ]
   resources:
     requests:
