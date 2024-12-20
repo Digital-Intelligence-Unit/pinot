@@ -58,3 +58,4 @@ kubernetes/helm/**/Chart.lock
 .mvn/.gradle-enterprise/
 spreadsheets*
 spreadsheet-scripts*
+notes.txt
