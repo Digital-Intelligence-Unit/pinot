@@ -222,17 +222,13 @@
       "dataType": "BOOLEAN"
     },
     {
-      "name": "duration_hours",
+      "name": "length_of_stay",
       "dataType": "STRING"
     }
   ],
   "metricFieldSpecs": [
     {
       "name": "cost",
-      "dataType": "INT"
-    },
-    {
-      "name": "length_of_stay_metric",
       "dataType": "INT"
     },
     {
@@ -245,10 +241,6 @@
     },
     {
       "name": "ltc_count",
-      "dataType": "INT"
-    },
-    {
-      "name": "duration_hours_metric",
       "dataType": "INT"
     }
   ],

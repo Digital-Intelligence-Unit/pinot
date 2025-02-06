@@ -228,11 +228,31 @@
     {
       "name": "duration_minutes",
       "dataType": "STRING"
+    },
+    {
+      "name": "high_intensity_user_5",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "high_intensity_user_10",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "high_intensity_user_15",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "high_intensity_user_20",
+      "dataType": "BOOLEAN"
     }
   ],
   "metricFieldSpecs": [
     {
       "name": "cost",
+      "dataType": "INT"
+    },
+    {
+      "name": "attendances",
       "dataType": "INT"
     },
     {

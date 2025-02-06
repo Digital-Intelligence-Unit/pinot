@@ -72,7 +72,9 @@
         "mh_physicalexaminationdone_flag",
         "covidvaccinationcount",
         "execution_date",
-        "cpm_date"
+        "cpm_date",
+        "high_intensity_user",
+        "attendances"
         ],
         "rangeIndexColumns": [],
         "rangeIndexVersion": 2,

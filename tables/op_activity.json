@@ -1,8 +1,8 @@
 {
-    "tableName": "ip_activity",
+    "tableName": "op_activity",
     "tableType": "OFFLINE",
     "segmentsConfig": {
-        "schemaName": "ip_activity",
+        "schemaName": "op_activity",
         "replication": "1",
         "replicasPerPartition": "1",
         "segmentPushFrequency": "HOURLY",
@@ -16,30 +16,32 @@
     "tableIndexConfig": {
         "invertedIndexColumns": [],
         "noDictionaryColumns": [
-            "ltc_count",
-            "age",
-            "risk_score_int",
-            "cost",
-            "event_date",
-            "event_date_long",
-            "asthma",
-            "copd",
-            "chd",
-            "heart_failure",
-            "hypertension",
-            "atrial_fibrillation",
-            "pad",
-            "cancer",
-            "depression",
-            "dementia",
-            "mental_health",
-            "learning_disabilities",
-            "diabetes",
-            "hypothyroid",
-            "ckd",
-            "epilepsy",
-            "osteoporosis",
-            "rheumatoid_arthritis"
+        "ltc_count",
+        "age",
+        "risk_score_int",
+        "length_of_stay",
+        "cost",
+        "admissions_id",
+        "event_date",
+        "event_date_long",
+        "asthma",
+        "copd",
+        "chd",
+        "heart_failure",
+        "hypertension",
+        "atrial_fibrillation",
+        "pad",
+        "cancer",
+        "depression",
+        "dementia",
+        "mental_health",
+        "learning_disabilities",
+        "diabetes",
+        "hypothyroid",
+        "ckd",
+        "epilepsy",
+        "osteoporosis",
+        "rheumatoid_arthritis"
         ],
         "rangeIndexColumns": [],
         "rangeIndexVersion": 2,
@@ -134,7 +136,37 @@
             "tierOverwrites": null
         },
         {
+            "name": "programming_budget_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
             "name": "ccg_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "hrg",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "ethnic_category_code",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [
@@ -154,7 +186,67 @@
             "tierOverwrites": null
         },
         {
+            "name": "primary_diagnosis",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "primary_procedure",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
             "name": "sitecode",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "hrg_chapter",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "hrg_sub_chapter",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "pbc_categories",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "pbc_sub_categories",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [
@@ -254,6 +346,16 @@
             "tierOverwrites": null
         },
         {
+            "name": "mosaic_label",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
             "name": "household_group",
             "encodingType": "RAW",
             "indexType": "TEXT",
@@ -344,7 +446,7 @@
             "tierOverwrites": null
         },
         {
-            "name": "length_of_stay",
+            "name": "opcs4_code",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [
@@ -354,7 +456,7 @@
             "tierOverwrites": null
         },
         {
-            "name": "acorn",
+            "name": "opcs4_with_code",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [
@@ -364,7 +466,7 @@
             "tierOverwrites": null
         },
         {
-            "name": "icd_10_code",
+            "name": "opcs4_chapter_code",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [
@@ -374,27 +476,7 @@
             "tierOverwrites": null
         },
         {
-            "name": "icd_10_description_with_code",
-            "encodingType": "RAW",
-            "indexType": "TEXT",
-            "indexTypes": [
-                "TEXT"
-            ],
-            "indexes": null,
-            "tierOverwrites": null
-        },
-        {
-            "name": "icd_10_chapter_description",
-            "encodingType": "RAW",
-            "indexType": "TEXT",
-            "indexTypes": [
-                "TEXT"
-            ],
-            "indexes": null,
-            "tierOverwrites": null
-        },
-        {
-            "name": "icd_10_sub_chapter",
+            "name": "opcs4_chapter",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [
@@ -430,6 +512,10 @@
         {
             "columnName": "ltc_count",
             "transformFunction": "Groovy({(asthma == 'TRUE' ? 1 : 0) + (copd == 'TRUE' ? 1 : 0) + (chd == 'TRUE' ? 1 : 0) + (heart_failure == 'TRUE' ? 1 : 0) + (hypertension == 'TRUE' ? 1 : 0) + (atrial_fibrillation == 'TRUE' ? 1 : 0) + (pad == 'TRUE' ? 1 : 0) + (cancer == 'TRUE' ? 1 : 0) + (depression == 'TRUE' ? 1 : 0) + (dementia == 'TRUE' ? 1 : 0) + (mental_health == 'TRUE' ? 1 : 0) + (learning_disabilities == 'TRUE' ? 1 : 0) + (diabetes == 'TRUE' ? 1 : 0) + (hypothyroid == 'TRUE' ? 1 : 0) + (ckd == 'TRUE' ? 1 : 0) + (epilepsy == 'TRUE' ? 1 : 0) + (osteoporosis == 'TRUE' ? 1 : 0) + (rheumatoid_arthritis == 'TRUE' ? 1 : 0)}, asthma, copd, chd, heart_failure, hypertension, atrial_fibrillation, pad, cancer, depression, dementia, mental_health, learning_disabilities, diabetes, hypothyroid, ckd, epilepsy, osteoporosis, rheumatoid_arthritis)"
+        },
+        {
+            "columnName": "length_of_stay_metric",
+            "transformFunction": "Groovy({(length_of_stay == 'NA' ? 0 : length_of_stay)}, length_of_stay)"
         },
         {
             "columnName": "mosaic_group",

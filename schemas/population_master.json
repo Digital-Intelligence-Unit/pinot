@@ -416,6 +416,10 @@
     {
       "name": "nhs_hc_completed",
       "dataType": "BOOLEAN"
+    },
+    {
+      "name": "high_intensity_user",
+      "dataType": "BOOLEAN"
     }
   ],
   "metricFieldSpecs": [
@@ -425,6 +429,10 @@
     },
     {
       "name": "cost",
+      "dataType": "INT"
+    },
+    {
+      "name": "attendances",
       "dataType": "INT"
     }
   ],

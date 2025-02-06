@@ -39,7 +39,12 @@
             "ckd",
             "epilepsy",
             "osteoporosis",
-            "rheumatoid_arthritis"
+            "rheumatoid_arthritis",
+            "high_intensity_user_5",
+            "high_intensity_user_10",
+            "high_intensity_user_15",
+            "high_intensity_user_20",
+            "attendances"
         ],
         "rangeIndexColumns": [],
         "rangeIndexVersion": 2,
