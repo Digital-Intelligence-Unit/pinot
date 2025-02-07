@@ -154,6 +154,90 @@
       "dataType": "STRING"
     },
     {
+      "name": "investigation_first",
+      "dataType": "STRING"
+    },
+    {
+      "name": "treatment_first",
+      "dataType": "STRING"
+    },
+    {
+      "name": "acuity_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "acuity_ecds_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "arrival_mode",
+      "dataType": "STRING"
+    },
+    {
+      "name": "arrival_mode_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "chief_complaint_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "chief_complaint_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "chief_complaint_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "chief_complaint_extended_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "chief_complaint_extended_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_status_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_status_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_status_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_destination_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_destination_group",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_destination_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_follow_up_code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "discharge_follow_up_description",
+      "dataType": "STRING"
+    },
+    {
+      "name": "department_type",
+      "dataType": "STRING"
+    },
+    {
+      "name": "department_type_description",
+      "dataType": "STRING"
+    },
+    {
       "name": "asthma",
       "dataType": "BOOLEAN"
     },

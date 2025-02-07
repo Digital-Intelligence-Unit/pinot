@@ -407,6 +407,216 @@
             ],
             "indexes": null,
             "tierOverwrites": null
+        },
+        {
+            "name": "investigation_first",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "treatment_first",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "acuity_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "acuity_ecds_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "arrival_mode",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "arrival_mode_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "chief_complaint_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "chief_complaint_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "chief_complaint_group",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "chief_complaint_extended_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "chief_complaint_extended_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_status_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_status_group",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_status_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_destination_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_destination_group",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_destination_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_follow_up_code",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "discharge_follow_up_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "department_type",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "department_type_description",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
         }
     ],
     "ingestionConfig": {
