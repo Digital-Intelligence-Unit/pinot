@@ -44,7 +44,11 @@
             "high_intensity_user_10",
             "high_intensity_user_15",
             "high_intensity_user_20",
-            "attendances"
+            "attendances",
+            "is_four_hour_breach",
+            "is_fifteen_min_assessment",
+            "is_admitted_as_inpatient",
+            "is_12_hour_breach"
         ],
         "rangeIndexColumns": [],
         "rangeIndexVersion": 2,
@@ -70,6 +74,26 @@
     "fieldConfigList": [
         {
             "name": "type",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "weekday",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "month",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [

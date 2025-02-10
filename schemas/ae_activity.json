@@ -238,6 +238,14 @@
       "dataType": "STRING"
     },
     {
+      "name": "weekday",
+      "dataType": "STRING"
+    },
+    {
+      "name": "month",
+      "dataType": "STRING"
+    },
+    {
       "name": "asthma",
       "dataType": "BOOLEAN"
     },
@@ -327,6 +335,22 @@
     },
     {
       "name": "high_intensity_user_20",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "is_four_hour_breach",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "is_fifteen_min_assessment",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "is_admitted_as_inpatient",
+      "dataType": "BOOLEAN"
+    },
+    {
+      "name": "is_12_hour_breach",
       "dataType": "BOOLEAN"
     }
   ],
