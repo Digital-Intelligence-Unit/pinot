@@ -34,10 +34,6 @@
         "dataType": "STRING"
       },
       {
-        "name": "hrg",
-        "dataType": "STRING"
-      },
-      {
         "name": "ethnic_category_code",
         "dataType": "STRING"
       },
@@ -67,22 +63,6 @@
       },
       {
         "name": "opcs4_chapter",
-        "dataType": "STRING"
-      },
-      {
-        "name": "hrg_chapter",
-        "dataType": "STRING"
-      },
-      {
-        "name": "hrg_sub_chapter",
-        "dataType": "STRING"
-      },
-      {
-        "name": "pbc_categories",
-        "dataType": "STRING"
-      },
-      {
-        "name": "pbc_sub_categories",
         "dataType": "STRING"
       },
       {
@@ -183,6 +163,18 @@
       },
       {
         "name": "month_start",
+        "dataType": "STRING"
+      },
+      {
+        "name": "nh_rch_resident",
+        "dataType": "STRING"
+      },
+      {
+        "name": "weekday",
+        "dataType": "STRING"
+      },
+      {
+        "name": "month",
         "dataType": "STRING"
       },
       {

@@ -156,16 +156,6 @@
             "tierOverwrites": null
         },
         {
-            "name": "hrg",
-            "encodingType": "RAW",
-            "indexType": "TEXT",
-            "indexTypes": [
-                "TEXT"
-            ],
-            "indexes": null,
-            "tierOverwrites": null
-        },
-        {
             "name": "ethnic_category_code",
             "encodingType": "RAW",
             "indexType": "TEXT",
@@ -207,46 +197,6 @@
         },
         {
             "name": "sitecode",
-            "encodingType": "RAW",
-            "indexType": "TEXT",
-            "indexTypes": [
-                "TEXT"
-            ],
-            "indexes": null,
-            "tierOverwrites": null
-        },
-        {
-            "name": "hrg_chapter",
-            "encodingType": "RAW",
-            "indexType": "TEXT",
-            "indexTypes": [
-                "TEXT"
-            ],
-            "indexes": null,
-            "tierOverwrites": null
-        },
-        {
-            "name": "hrg_sub_chapter",
-            "encodingType": "RAW",
-            "indexType": "TEXT",
-            "indexTypes": [
-                "TEXT"
-            ],
-            "indexes": null,
-            "tierOverwrites": null
-        },
-        {
-            "name": "pbc_categories",
-            "encodingType": "RAW",
-            "indexType": "TEXT",
-            "indexTypes": [
-                "TEXT"
-            ],
-            "indexes": null,
-            "tierOverwrites": null
-        },
-        {
-            "name": "pbc_sub_categories",
             "encodingType": "RAW",
             "indexType": "TEXT",
             "indexTypes": [
@@ -484,6 +434,36 @@
             ],
             "indexes": null,
             "tierOverwrites": null
+        },
+        {
+            "name": "nh_rch_resident",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "weekday",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
+        },
+        {
+            "name": "month",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
         }
     ],
     "ingestionConfig": {
@@ -496,10 +476,6 @@
         {
             "columnName": "acorn",
             "transformFunction": "Groovy({(household_group + household_type)}, household_group, household_type)"
-        },
-        {
-            "columnName": "event_date_long",
-            "transformFunction": "fromDateTime(event_date, 'yyyy-MM-dd')"
         },
         {
             "columnName": "week_commencing_long",

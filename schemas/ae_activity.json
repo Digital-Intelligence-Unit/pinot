@@ -238,6 +238,10 @@
       "dataType": "STRING"
     },
     {
+      "name": "nh_rch_resident",
+      "dataType": "STRING"
+    },
+    {
       "name": "weekday",
       "dataType": "STRING"
     },

@@ -128,7 +128,7 @@ controller:
     accessMode: ReadWriteOnce
     size: 10G
     mountPath: /var/pinot/controller/data
-    storageClass: ""
+    storageClass: "gp3"
     extraVolumes: []
     extraVolumeMounts: []
 
@@ -428,8 +428,7 @@ server:
     accessMode: ReadWriteOnce
     size: 30G
     mountPath: /var/pinot/server/data
-    storageClass: ""
-    #storageClass: "ssd"
+    storageClass: "gp3"
     extraVolumes: []
     extraVolumeMounts: []
 
@@ -556,8 +555,7 @@ minion:
     accessMode: ReadWriteOnce
     size: 4G
     mountPath: /var/pinot/minion/data
-    storageClass: ""
-    #storageClass: "ssd"
+    storageClass: "gp3"
     extraVolumes: []
     extraVolumeMounts: []
 
@@ -668,8 +666,7 @@ minionStateless:
     accessMode: ReadWriteOnce
     size: 4G
     mountPath: /var/pinot/minion/data
-    storageClass: ""
-    #storageClass: "ssd"
+    storageClass: "gp3"
     extraVolumes: []
     extraVolumeMounts: []
 

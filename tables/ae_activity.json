@@ -641,6 +641,16 @@
             ],
             "indexes": null,
             "tierOverwrites": null
+        },
+        {
+            "name": "nh_rch_resident",
+            "encodingType": "RAW",
+            "indexType": "TEXT",
+            "indexTypes": [
+                "TEXT"
+            ],
+            "indexes": null,
+            "tierOverwrites": null
         }
     ],
     "ingestionConfig": {
@@ -653,10 +663,6 @@
         {
             "columnName": "acorn",
             "transformFunction": "Groovy({(household_group + household_type)}, household_group, household_type)"
-        },
-        {
-            "columnName": "event_date_long",
-            "transformFunction": "fromDateTime(event_date, 'yyyy-MM-dd')"
         },
         {
             "columnName": "week_commencing_long",

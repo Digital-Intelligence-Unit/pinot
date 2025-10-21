@@ -46,6 +46,26 @@
       "dataType": "STRING"
     },
     {
+      "name": "hrg",
+      "dataType": "STRING"
+    },
+    {
+      "name": "hrg_chapter",
+      "dataType": "STRING"
+    },
+    {
+      "name": "hrg_sub_chapter",
+      "dataType": "STRING"
+    },
+    {
+      "name": "pbc_categories",
+      "dataType": "STRING"
+    },
+    {
+      "name": "pbc_sub_categories",
+      "dataType": "STRING"
+    },
+    {
       "name": "digest",
       "dataType": "STRING"
     },
@@ -222,9 +242,22 @@
       "dataType": "BOOLEAN"
     },
     {
+      "name": "nh_rch_resident",
+      "dataType": "STRING"
+    },
+    {
+      "name": "weekday",
+      "dataType": "STRING"
+    },
+    {
+      "name": "month",
+      "dataType": "STRING"
+    },
+    {
       "name": "length_of_stay",
       "dataType": "STRING"
     }
+    
   ],
   "metricFieldSpecs": [
     {
